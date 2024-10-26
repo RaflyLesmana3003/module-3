@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/api/server" method="POST">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" name="nama_lengkap" placeholder="masukkan nama" id="name" minlength="4" maxlength="3"><br/><br/>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="masukkan email" id="email" required pattern=""><br/><br/>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="masukkan password" id="password"><br/><br/>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" placeholder="masukkan pesan" cols="10" rows="5"></textarea><br/><br/>
+
+        <select name="education" id="education">
+            <option disabled selected>Pilih Pendidikan</option>
+            <option value="sd">SD (Sekolah Dasar)</option>
+            <option value="smp">SMP (Sekolah Menengah Pertama)</option>
+            <option value="sma">SMA (Sekolah Menengah Atas)</option>
+        </select><br/><br/>
+        
+        <!-- radio button - pilihan salah satu aja -->
+        <label>Jenis Kelamin</label><br/>
+        <input type="radio" name="gender" value="laki-laki" id="laki-laki" checked>
+        <label for="laki-laki">Laki-Laki</label><br/>
+        <input type="radio" name="gender" value="perempuan" id="perempuan" checked>
+        <label for="perempuan">Perempuan</label><br/><br/>
+
+        <label>Hobi</label><br/>
+        <input type="checkbox" name="hobi" value="renang" id="renang" checked>
+        <label for="renang">Renang</label><br/>
+        <input type="checkbox" name="hobi" value="futsal" id="futsal" checked>
+        <label for="futsal">Futsal</label><br/>
+        <input type="checkbox" name="hobi" value="basket" id="basket" checked>
+        <label for="basket">Basket</label><br/>
+        <input type="checkbox" name="hobi" value="badminton" id="badminton">
+        <label for="badminton">Badminton</label><br/>
+        <input type="checkbox" name="hobi" value="bulutangkis" id="bulutangkis">
+        <label for="bulutangkis">Bulutangkis</label><br/>
+        <input type="checkbox" name="hobi" value="voli" id="voli">
+        <label for="voli">Voli</label><br/><br/>
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
